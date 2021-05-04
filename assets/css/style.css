@@ -18,4 +18,38 @@ section {
   padding: 8em 0;
   height: 100vh;
 }
+
+svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.clouds {
+  -webkit-animation: cloud-anim 60s normal infinite linear;
+          animation: cloud-anim 60s normal infinite linear;
+}
+
+@-webkit-keyframes cloud-anim {
+  from {
+    -webkit-transform: translateX(-200vw);
+            transform: translateX(-200vw);
+  }
+  to {
+    -webkit-transform: translateX(200vw);
+            transform: translateX(200vw);
+  }
+}
+
+@keyframes cloud-anim {
+  from {
+    -webkit-transform: translateX(-200vw);
+            transform: translateX(-200vw);
+  }
+  to {
+    -webkit-transform: translateX(200vw);
+            transform: translateX(200vw);
+  }
+}
 /*# sourceMappingURL=style.css.map */
