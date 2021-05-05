@@ -1,6 +1,6 @@
 body {
     height: 100vh;
-    background-color: #ffa5a0;
+    // background-color: #ffa5a0;
     margin: 0px;
     display: grid;
     font-family: 'Poppins';
@@ -8,7 +8,7 @@ body {
 
 .container {
     text-align: center;
-    padding: 8em 0;
+    padding: 0em 0; //8em 0
     height: 100vh;
 }
 
@@ -27,14 +27,20 @@ svg {
 }
 
 .clouds {
-    animation: cloud-anim 60s normal infinite linear;
+    animation: cloud-anim 100s normal infinite linear;
 }
 
 @keyframes cloud-anim {
     from {
-        transform: translateX(-200vw);
+        transform: translateX(-110vw);
     }
     to {
         transform: translateX(200vw);
     }
+}
+
+#portfolio {
+    height: 100vh;
+    background-color: #cccccc;
+    background-image: linear-gradient(#8f5c46, #023758);
 }
