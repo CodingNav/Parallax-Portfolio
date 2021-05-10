@@ -7,23 +7,32 @@ body {
 }
 
 .container {
+  position: relative;
   text-align: center;
   padding: 0em 0;
   height: 100vh;
 }
 
-section {
-  text-align: center;
-  padding: 8em 0;
-  height: 100vh;
+#container-1 {
+  background-color: #ffaaa3;
+}
+
+#container-3 {
+  background-color: #c9eeff;
 }
 
 svg {
   position: absolute;
-  bottom: 0;
   left: 0;
-  z-index: -1;
   overflow: visible;
+}
+
+#first-svg {
+  bottom: 0;
+}
+
+#second-svg {
+  top: 0;
 }
 
 .clouds {
@@ -51,6 +60,10 @@ svg {
     -webkit-transform: translateX(200vw);
             transform: translateX(200vw);
   }
+}
+
+.second-div {
+  margin-top: -5px;
 }
 
 #portfolio {
