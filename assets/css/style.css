@@ -18,12 +18,13 @@ body {
 }
 
 #container-3 {
-  background-color: #c9eeff;
+  background-color: #013658;
 }
 
 svg {
   position: absolute;
   left: 0;
+  bottom: 0;
   overflow: visible;
 }
 
@@ -67,7 +68,7 @@ svg {
   }
 }
 
-.second-div {
+.margin {
   margin-top: -5px;
 }
 
@@ -76,6 +77,11 @@ svg {
   background-color: #8f5c46;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#8f5c46), to(#023758));
   background-image: linear-gradient(#8f5c46, #023758);
+}
+
+#contact {
+  height: 100vh;
+  background-color: #c9eeff;
 }
 
 @-webkit-keyframes spin {
