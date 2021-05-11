@@ -70,15 +70,19 @@ svg {
 }
 
 #arrow {
-    // animation: spin 50s infinite;
+    position: relative;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    animation: spin 20s infinite;
+    transform-box: fill-box; 
 }
 
 @keyframes spin {
     from {
-        transform: rotateY(0deg);
+        transform: rotate(0deg);
     }
     to { 
-        transform: rotateY(360deg);
+        transform: rotate(360deg);
     }
 }
 
