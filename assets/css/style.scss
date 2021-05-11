@@ -1,3 +1,5 @@
+@font-face { font-family: Bubblegum; src: url('../fonts/Bubblegum.ttf'); } 
+
 body {
     height: 100vh;
     // background-color: #ffa5a0;
@@ -38,7 +40,22 @@ svg {
 
 #content {
     position: relative;
+    height: 100vh;
     z-index: 1;
+    
+    h1 {
+        position: absolute;
+        color: #fff7e7;
+        text-shadow: 0px 3px 5px #472b2b;
+        font-family: 'Farro', sans-serif;
+        -webkit-text-stroke: 1px #bf1765;
+        letter-spacing: 2px;
+        font-size: 2.8vw;
+        bottom: 15.5vw;
+        left: 17.5vw;
+        width: 15vw;        
+        transform: rotate(-3deg);
+    }   
 }
 
 .clouds {
@@ -86,3 +103,6 @@ svg {
     }
 }
 
+g#layer01_x5F_Clouds_x5F_1 path {
+    fill: #c9eeff !important; 
+}
