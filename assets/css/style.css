@@ -18,7 +18,7 @@ body {
 }
 
 #container-3 {
-  background-color: #013658;
+  background-color: #003657;
 }
 
 svg {
@@ -75,8 +75,8 @@ svg {
 #portfolio {
   height: 100vh;
   background-color: #8f5c46;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#8f5c46), to(#023758));
-  background-image: linear-gradient(#8f5c46, #023758);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#8f5c46), color-stop(85%, #003657));
+  background-image: linear-gradient(#8f5c46, #003657 85%);
 }
 
 #contact {
