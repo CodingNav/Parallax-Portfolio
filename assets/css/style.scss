@@ -60,14 +60,17 @@ svg {
 
 .clouds {
     animation: cloud-anim 100s normal infinite linear;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    transform-box: fill-box; 
 }
 
 @keyframes cloud-anim {
     from {
-        transform: translateX(-110vw);
+        transform: translateX(-110vw) translateY(55px);
     }
     to {
-        transform: translateX(200vw);
+        transform: translateX(200vw) translateY(55px);
     }
 }
 

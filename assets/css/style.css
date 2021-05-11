@@ -65,27 +65,30 @@ svg {
 .clouds {
   -webkit-animation: cloud-anim 100s normal infinite linear;
           animation: cloud-anim 100s normal infinite linear;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  transform-box: fill-box;
 }
 
 @-webkit-keyframes cloud-anim {
   from {
-    -webkit-transform: translateX(-110vw);
-            transform: translateX(-110vw);
+    -webkit-transform: translateX(-110vw) translateY(55px);
+            transform: translateX(-110vw) translateY(55px);
   }
   to {
-    -webkit-transform: translateX(200vw);
-            transform: translateX(200vw);
+    -webkit-transform: translateX(200vw) translateY(55px);
+            transform: translateX(200vw) translateY(55px);
   }
 }
 
 @keyframes cloud-anim {
   from {
-    -webkit-transform: translateX(-110vw);
-            transform: translateX(-110vw);
+    -webkit-transform: translateX(-110vw) translateY(55px);
+            transform: translateX(-110vw) translateY(55px);
   }
   to {
-    -webkit-transform: translateX(200vw);
-            transform: translateX(200vw);
+    -webkit-transform: translateX(200vw) translateY(55px);
+            transform: translateX(200vw) translateY(55px);
   }
 }
 
