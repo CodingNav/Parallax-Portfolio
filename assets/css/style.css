@@ -35,6 +35,11 @@ svg {
   top: 0;
 }
 
+#content {
+  position: relative;
+  z-index: 1;
+}
+
 .clouds {
   -webkit-animation: cloud-anim 100s normal infinite linear;
           animation: cloud-anim 100s normal infinite linear;
