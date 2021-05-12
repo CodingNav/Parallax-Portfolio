@@ -26,7 +26,7 @@ body {
     background-image: linear-gradient(#8f5c46, #003657 85%);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     z-index: 0;
 }
@@ -64,7 +64,7 @@ svg {
         font-family: 'Farro', sans-serif;
         -webkit-text-stroke: 1px #472b2b;
         letter-spacing: 2px;
-        font-size: 2.8vw;
+        font-size: 2.5vw;
         bottom: 15.5vw;
         left: 17.5vw;
         width: 15vw;        
@@ -101,16 +101,22 @@ svg {
 //SECOND DIV
 
 #container-2 h1{
+    font-family: 'Farro', sans-serif;  
+    color: #fff7e7;
+    font-size: 5vw;
+    text-shadow: 0px 3px 5px #472b2b;
+    -webkit-text-stroke: 1px #472b2b;
     position: absolute;
     top: 0;
 }
 
 .box {
     font-family: Verdana, sans-serif;
-    background: #010615;
+    background: #472b2b;
     position: relative;
-    width: 300px;
-    height: 200px;
+    top: 12vw;
+    height: 20vw;
+    width: 38vw;
     margin: 40px;
     display: flex;
     justify-content: center;
@@ -129,18 +135,19 @@ svg {
 
                 img {
                     max-width: 100%;
-                    opacity: 0.1;
+                    max-height: 100%;
                     transition: 0.5s;
                 }
     }
 }
 
 .box:hover {
-    height: 250px;
+    height: 500px;
+}
 
-        img {
-            opacity: 1;
-        }
+.box:hover img {
+
+    opacity: 1;
 }
 
 .box:before {
@@ -163,16 +170,17 @@ svg {
     bottom: -2px;
     background: #fff;
     z-index: -2;
-    filter: blur(40px);
+    filter: blur(10px);
 }
 
 .box:before, .box:after {
-    background: linear-gradient(235deg, #001aff, #ffee00, #00ff55);
+    background: linear-gradient(235deg, #ffbeba, #ffffff, #ff979a);
 }
 
-.box:nth-child(2):before, .box:nth-child(2):after {
-    background: linear-gradient(235deg, #ff0000, #00eeff, #ff00c8);
-}
+//For if I wanted to add different colors to each box
+// .box:nth-child(2):before, .box:nth-child(2):after {
+//     background: linear-gradient(235deg, #ff0000, #00eeff, #ff00c8);
+// }
 
 //THIRD DIV
 g#layer01_x5F_Clouds_x5F_1 path {
