@@ -6,6 +6,7 @@
 body {
   height: 100vh;
   margin: 0px;
+  padding: 0px;
   display: -ms-grid;
   display: grid;
   font-family: 'Poppins';
@@ -22,6 +23,25 @@ body {
   background-color: #ffaaa3;
 }
 
+#container-2 {
+  height: 100vh;
+  background-color: #8f5c46;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#8f5c46), color-stop(85%, #003657));
+  background-image: linear-gradient(#8f5c46, #003657 85%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  z-index: 0;
+}
+
 #container-3 {
   background-color: #003657;
 }
@@ -33,12 +53,12 @@ svg {
   overflow: visible;
 }
 
-#first-svg {
-  bottom: 0;
-}
-
 #second-svg {
   top: 0;
+}
+
+.margin {
+  margin-top: -5px;
 }
 
 #content {
@@ -70,44 +90,6 @@ svg {
   transform-box: fill-box;
 }
 
-@-webkit-keyframes cloud-anim {
-  from {
-    -webkit-transform: translateX(-110vw) translateY(55px);
-            transform: translateX(-110vw) translateY(55px);
-  }
-  to {
-    -webkit-transform: translateX(200vw) translateY(55px);
-            transform: translateX(200vw) translateY(55px);
-  }
-}
-
-@keyframes cloud-anim {
-  from {
-    -webkit-transform: translateX(-110vw) translateY(55px);
-            transform: translateX(-110vw) translateY(55px);
-  }
-  to {
-    -webkit-transform: translateX(200vw) translateY(55px);
-            transform: translateX(200vw) translateY(55px);
-  }
-}
-
-.margin {
-  margin-top: -5px;
-}
-
-#portfolio {
-  height: 100vh;
-  background-color: #8f5c46;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#8f5c46), color-stop(85%, #003657));
-  background-image: linear-gradient(#8f5c46, #003657 85%);
-}
-
-#contact {
-  height: 100vh;
-  background-color: #c9eeff;
-}
-
 #arrow {
   position: relative;
   -webkit-transform-origin: center center;
@@ -115,6 +97,92 @@ svg {
   -webkit-animation: spin 3s alternate infinite linear;
           animation: spin 3s alternate infinite linear;
   transform-box: fill-box;
+}
+
+#container-2 h1 {
+  position: absolute;
+  top: 0;
+}
+
+.box {
+  font-family: Verdana, sans-serif;
+  background: #010615;
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+.box .img-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 2;
+}
+
+.box .img-box img {
+  max-width: 100%;
+  opacity: 0.1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.box:hover {
+  height: 250px;
+}
+
+.box:hover img {
+  opacity: 1;
+}
+
+.box:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+}
+
+.box:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+  -webkit-filter: blur(40px);
+          filter: blur(40px);
+}
+
+g#layer01_x5F_Clouds_x5F_1 path {
+  fill: #c9eeff !important;
+}
+
+#contact {
+  height: 100vh;
+  background-color: #c9eeff;
 }
 
 @-webkit-keyframes spin {
@@ -139,7 +207,25 @@ svg {
   }
 }
 
-g#layer01_x5F_Clouds_x5F_1 path {
-  fill: #c9eeff !important;
+@-webkit-keyframes cloud-anim {
+  from {
+    -webkit-transform: translateX(-110vw) translateY(55px);
+            transform: translateX(-110vw) translateY(55px);
+  }
+  to {
+    -webkit-transform: translateX(200vw) translateY(55px);
+            transform: translateX(200vw) translateY(55px);
+  }
+}
+
+@keyframes cloud-anim {
+  from {
+    -webkit-transform: translateX(-110vw) translateY(55px);
+            transform: translateX(-110vw) translateY(55px);
+  }
+  to {
+    -webkit-transform: translateX(200vw) translateY(55px);
+            transform: translateX(200vw) translateY(55px);
+  }
 }
 /*# sourceMappingURL=style.css.map */
