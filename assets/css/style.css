@@ -24,10 +24,6 @@ body {
 }
 
 #container-2 {
-  height: 100vh;
-  background-color: #8f5c46;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#8f5c46), color-stop(85%, #003657));
-  background-image: linear-gradient(#8f5c46, #003657 85%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,7 +35,7 @@ body {
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  z-index: 0;
+  z-index: 1;
 }
 
 #container-3 {
@@ -75,6 +71,7 @@ svg {
   -webkit-text-stroke: 1px #472b2b;
   letter-spacing: 2px;
   font-size: 2.5vw;
+  margin-top: 15px;
   bottom: 15.5vw;
   left: 17.5vw;
   width: 15vw;
@@ -99,6 +96,17 @@ svg {
   transform-box: fill-box;
 }
 
+.background {
+  position: absolute;
+  top: 100vh;
+  height: 100vh;
+  width: 100%;
+  background-color: #8f5c46;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#8f5c46), color-stop(85%, #003657));
+  background-image: linear-gradient(#8f5c46, #003657 85%);
+  z-index: 0;
+}
+
 #container-2 h1 {
   font-family: 'Farro', sans-serif;
   color: #fff7e7;
@@ -114,28 +122,17 @@ svg {
   background: #472b2b;
   position: relative;
   top: 12vw;
-  height: 20vw;
+  min-height: 0vw;
   width: 38vw;
   margin: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .box .img-box {
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   padding: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -143,6 +140,8 @@ svg {
 }
 
 .box .img-box img {
+  position: relative;
+  z-index: 3;
   max-width: 100%;
   max-height: 100%;
   -webkit-transition: 0.5s;
@@ -150,7 +149,7 @@ svg {
 }
 
 .box:hover {
-  height: 500px;
+  min-height: 500px;
 }
 
 .box:hover img {
@@ -183,6 +182,36 @@ svg {
 
 .box:before, .box:after {
   background: linear-gradient(235deg, #ffbeba, #ffffff, #ff979a);
+}
+
+.box .portfolio-content {
+  position: absolute;
+  bottom: 15px;
+  background: #472b2b;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  z-index: 1;
+}
+
+.box:hover .portfolio-content {
+  position: relative;
+  opacity: 1;
+  left: 0px;
+}
+
+.box .portfolio-content h2 {
+  font-size: 35px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.box .portfolio-content p {
+  font-size: 15px;
+  color: #fff;
+  line-height: 20px;
 }
 
 g#layer01_x5F_Clouds_x5F_1 path {
