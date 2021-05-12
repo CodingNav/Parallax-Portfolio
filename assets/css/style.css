@@ -176,6 +176,14 @@ svg {
           filter: blur(40px);
 }
 
+.box:before, .box:after {
+  background: linear-gradient(235deg, #001aff, #ffee00, #00ff55);
+}
+
+.box:nth-child(2):before, .box:nth-child(2):after {
+  background: linear-gradient(235deg, #ff0000, #00eeff, #ff00c8);
+}
+
 g#layer01_x5F_Clouds_x5F_1 path {
   fill: #c9eeff !important;
 }
