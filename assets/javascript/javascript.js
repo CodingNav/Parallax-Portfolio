@@ -1,13 +1,3 @@
-$("#pirate").hover(function(){
-  $(this).attr('src', './assets/images/laptop.png')
-}, function(){
-  $(this).attr('src', './assets/images/pirate_mockup.png')
-})
-;
-
-
-
-
 $("#svg-1").load("candy-background.html", function () {
   var rellax = new Rellax('.rellax', {
     speed: -2,
@@ -28,5 +18,11 @@ $("#svg-2").load("night-background.html", function () {
     vertical: true,
     horizontal: false
   });
+});
+
+$("#pirate").hover(function(){
+  $(this).find("img").attr('src', './assets/images/laptop.png')
+}, function(){
+  $(this).find("img").attr('src', './assets/images/pirate_mockup.png')
 });
 
