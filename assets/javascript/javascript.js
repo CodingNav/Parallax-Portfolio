@@ -19,9 +19,3 @@ $("#svg-2").load("night-background.html", function () {
     horizontal: false
   });
 });
-
-// $("#pirate").hover(function(){
-//   $(this).find("img").attr('src', './assets/images/game_screen.gif')
-// }, function(){
-//   $(this).find("img").attr('src', './assets/images/pirate_mockup.png')
-// });
