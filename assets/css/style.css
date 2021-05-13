@@ -47,6 +47,11 @@ svg {
   margin-top: -5px;
 }
 
+a:hover {
+  color: #003657 !important;
+  text-decoration: none !important;
+}
+
 #content {
   position: relative;
   height: 100vh;
@@ -295,15 +300,15 @@ g#layer01_x5F_Clouds_x5F_1 path {
 
 #container-4 h1 {
   font-family: "Farro", sans-serif;
-  color: #6eb6d0; 
+  color: #6eb6d0;
   font-size: 5vw;
-  -webkit-text-stroke: 2px #498da5; 
+  -webkit-text-stroke: 2px #498da5;
 }
 
 form {
   color: #498da5;
   font-family: Verdana, sans-serif;
-  letter-spacing: 1px;
+  font-size: 1.2em;
   text-align: left;
 }
 
@@ -313,9 +318,14 @@ form {
 }
 
 .form-control:focus {
-  background-color: #b7e1ef;
-  border-color: transparent;
-  box-shadow: 0 0 0 0.2rem rgb(85 183 211 / 50%);
+  background-color: #fff2f2;
+  border-color: #ffb7bc;
+  -webkit-box-shadow: 0 0 0 0.2rem #ff979a85;
+          box-shadow: 0 0 0 0.2rem #ff979a85;
+}
+
+#send-button {
+  background-color: #6eb6d0;
 }
 
 @-webkit-keyframes spin {
