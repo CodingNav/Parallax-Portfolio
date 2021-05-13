@@ -80,8 +80,8 @@ svg {
 }
 
 .clouds {
-  -webkit-animation: cloud-anim 100s normal infinite linear;
-          animation: cloud-anim 100s normal infinite linear;
+  -webkit-animation: cloud-anim 90s normal infinite linear;
+          animation: cloud-anim 90s normal infinite linear;
   -webkit-transform-origin: center center;
   transform-origin: center center;
   transform-box: fill-box;
@@ -198,6 +198,7 @@ svg {
   position: relative;
   opacity: 1;
   left: 0px;
+  padding: 10px;
 }
 
 .box .portfolio-content h2 {
@@ -283,23 +284,23 @@ g#layer01_x5F_Clouds_x5F_1 path {
 
 @-webkit-keyframes spin {
   from {
-    -webkit-transform: rotate(-60deg);
-            transform: rotate(-60deg);
+    -webkit-transform: rotate(-130deg);
+            transform: rotate(-130deg);
   }
   to {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
   }
 }
 
 @keyframes spin {
   from {
-    -webkit-transform: rotate(-60deg);
-            transform: rotate(-60deg);
+    -webkit-transform: rotate(-130deg);
+            transform: rotate(-130deg);
   }
   to {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
   }
 }
 
