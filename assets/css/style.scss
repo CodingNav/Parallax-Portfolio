@@ -1,4 +1,7 @@
-@font-face { font-family: Bubblegum; src: url('../fonts/Bubblegum.ttf'); } 
+@font-face {
+    font-family: Bubblegum;
+    src: url("../fonts/Bubblegum.ttf");
+}
 
 body {
     height: 100vh;
@@ -6,7 +9,7 @@ body {
     margin: 0px;
     padding: 0px;
     display: grid;
-    font-family: 'Poppins';
+    font-family: "Poppins";
 }
 
 .container {
@@ -21,7 +24,6 @@ body {
 }
 
 #container-2 {
-
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -44,48 +46,37 @@ svg {
     top: 0;
 }
 
-
 .margin {
     margin-top: -5px;
 }
 
-//FIRST DIV 
+//FIRST DIV
 #content {
     position: relative;
     height: 100vh;
     z-index: 1;
-    
+
     h1 {
         position: absolute;
         color: #fff7e7;
         text-shadow: 0px 3px 5px #472b2b;
-        font-family: 'Farro', sans-serif;
+        font-family: "Farro", sans-serif;
         -webkit-text-stroke: 1px #472b2b;
         letter-spacing: 2px;
         font-size: 2.5vw;
         margin-top: 15px;
         bottom: 15.5vw;
         left: 17.5vw;
-        width: 15vw;        
+        width: 15vw;
         transform: rotate(-3deg);
-    }   
-//     h2 {
-//         position: absolute;
-//         bottom: 13vw;
-//         right: 32vw;
-//         -webkit-transform-origin: center center;
-//         transform-origin: center center;
-//         animation: text-spin 3s alternate infinite linear;
-//         transform-box: fill-box; 
-//         width: 136.05px;
-//     }
+    }
 }
 
 .clouds {
     animation: cloud-anim 90s normal infinite linear;
     -webkit-transform-origin: center center;
     transform-origin: center center;
-    transform-box: fill-box; 
+    transform-box: fill-box;
 }
 
 #arrow {
@@ -93,9 +84,8 @@ svg {
     -webkit-transform-origin: center center;
     transform-origin: center center;
     animation: spin 3s alternate infinite linear;
-    transform-box: fill-box; 
+    transform-box: fill-box;
 }
-
 
 //SECOND DIV
 .background {
@@ -108,8 +98,8 @@ svg {
     z-index: 0;
 }
 
-#container-2 h1{
-    font-family: 'Farro', sans-serif;  
+#container-2 h1 {
+    font-family: "Farro", sans-serif;
     color: #ffbeba;
     font-size: 5vw;
     text-shadow: 0px 3px 5px #472b2b;
@@ -128,21 +118,21 @@ svg {
     margin: 40px;
     transition: 0.5s;
 
-        .img-box {
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 10px;
-            box-sizing: border-box;
-            z-index: 2;
+    .img-box {
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        z-index: 2;
 
-                img {
-                    position: relative;
-                    z-index: 3;
-                    max-width: 100%;
-                    max-height: 100%;
-                    transition: 0.5s;
-                }
+        img {
+            position: relative;
+            z-index: 3;
+            max-width: 100%;
+            max-height: 100%;
+            transition: 0.5s;
+        }
     }
 }
 
@@ -155,7 +145,7 @@ svg {
 }
 
 .box:before {
-    content: '';
+    content: "";
     position: absolute;
     top: -2px;
     left: -2px;
@@ -166,7 +156,7 @@ svg {
 }
 
 .box:after {
-    content: '';
+    content: "";
     position: absolute;
     top: -2px;
     left: -2px;
@@ -177,7 +167,8 @@ svg {
     filter: blur(10px);
 }
 
-.box:before, .box:after {
+.box:before,
+.box:after {
     background: linear-gradient(235deg, #ffbeba, #ffffff, #ff979a);
 }
 
@@ -195,7 +186,7 @@ svg {
     z-index: 1;
 }
 
-.box:hover .portfolio-content {    
+.box:hover .portfolio-content {
     position: relative;
     opacity: 1;
     left: 0px;
@@ -225,54 +216,54 @@ svg {
     text-transform: capitalize;
     background-color: #ff979a;
     font: {
-      family: 'Roboto', sans-serif; 
-      size: 18px;
+        family: "Roboto", sans-serif;
+        size: 18px;
     }
     padding: 20px 0px;
     width: 150px;
     border-radius: 6px;
     overflow: hidden;
-  }
+}
 
 .effect.effect-5 {
     transition: all 0.2s linear 0s;
-    
+
     &:before {
-      content: "\f054";
-      font-family: FontAwesome;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      top: 0;
-      left: 0px;
-      height: 100%;
-      width: 30px;
-      background-color: rgba(#fff,0.3);
-      border-radius: 0 50% 50% 0;
-      transform: scale(0,1);
-      transform-origin: left center;
-      transition: all 0.2s linear 0s;
+        content: "\f054";
+        font-family: FontAwesome;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        height: 100%;
+        width: 30px;
+        background-color: rgba(#fff, 0.3);
+        border-radius: 0 50% 50% 0;
+        transform: scale(0, 1);
+        transform-origin: left center;
+        transition: all 0.2s linear 0s;
     }
-    
-     &:hover {
-      text-indent: 30px;
-      
-      &:before {
-        transform: scale(1,1);
-        text-indent: 0;
-      }
+
+    &:hover {
+        text-indent: 30px;
+
+        &:before {
+            transform: scale(1, 1);
+            text-indent: 0;
+        }
     }
-  }
-  
-//THIRD DIV
-g#layer01_x5F_Clouds_x5F_1 path {
-    fill: #c9eeff !important; 
 }
 
-#container-3 h1{
+//THIRD DIV
+g#layer01_x5F_Clouds_x5F_1 path {
+    fill: #c9eeff !important;
+}
+
+#container-3 h1 {
     position: absolute;
-    font-family: 'Farro', sans-serif;
+    font-family: "Farro", sans-serif;
     color: #ffbeba;
     font-size: 5vw;
     text-shadow: 0px 3px 5px #472b2b;
@@ -300,19 +291,11 @@ g#layer01_x5F_Clouds_x5F_1 path {
     from {
         transform: rotate(-130deg);
     }
-    to { 
+    to {
         transform: rotate(10deg);
     }
 }
 
-// @keyframes text-spin {
-//     from {
-//         transform: rotate(-95deg);
-//     }
-//     to { 
-//         transform: rotate(-15deg);
-//     }
-// }
 
 @keyframes cloud-anim {
     from {

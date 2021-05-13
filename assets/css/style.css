@@ -9,7 +9,7 @@ body {
   padding: 0px;
   display: -ms-grid;
   display: grid;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 .container {
@@ -67,7 +67,7 @@ svg {
   position: absolute;
   color: #fff7e7;
   text-shadow: 0px 3px 5px #472b2b;
-  font-family: 'Farro', sans-serif;
+  font-family: "Farro", sans-serif;
   -webkit-text-stroke: 1px #472b2b;
   letter-spacing: 2px;
   font-size: 2.5vw;
@@ -108,7 +108,7 @@ svg {
 }
 
 #container-2 h1 {
-  font-family: 'Farro', sans-serif;
+  font-family: "Farro", sans-serif;
   color: #ffbeba;
   font-size: 5vw;
   text-shadow: 0px 3px 5px #472b2b;
@@ -157,7 +157,7 @@ svg {
 }
 
 .box:before {
-  content: '';
+  content: "";
   position: absolute;
   top: -2px;
   left: -2px;
@@ -168,7 +168,7 @@ svg {
 }
 
 .box:after {
-  content: '';
+  content: "";
   position: absolute;
   top: -2px;
   left: -2px;
@@ -180,7 +180,8 @@ svg {
           filter: blur(10px);
 }
 
-.box:before, .box:after {
+.box:before,
+.box:after {
   background: linear-gradient(235deg, #ffbeba, #ffffff, #ff979a);
 }
 
@@ -223,7 +224,7 @@ svg {
   color: #fff;
   text-transform: capitalize;
   background-color: #ff979a;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   padding: 20px 0px;
   width: 150px;
@@ -279,7 +280,7 @@ g#layer01_x5F_Clouds_x5F_1 path {
 
 #container-3 h1 {
   position: absolute;
-  font-family: 'Farro', sans-serif;
+  font-family: "Farro", sans-serif;
   color: #ffbeba;
   font-size: 5vw;
   text-shadow: 0px 3px 5px #472b2b;
