@@ -25,4 +25,3 @@ $("#svg-2").load("night-background.html", function () {
 // }, function(){
 //   $(this).find("img").attr('src', './assets/images/pirate_mockup.png')
 // });
-

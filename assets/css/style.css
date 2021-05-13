@@ -12,7 +12,7 @@ body {
   font-family: "Poppins";
 }
 
-.container {
+.my-container {
   position: relative;
   text-align: center;
   padding: 0em 0;
@@ -113,37 +113,20 @@ svg {
   font-size: 5vw;
   text-shadow: 0px 3px 5px #472b2b;
   -webkit-text-stroke: 2px #ffffff;
-  position: absolute;
-  top: 0;
+  width: 100%;
 }
 
-.box {
+.card-deck {
+  width: 75%;
+}
+
+.card {
   font-family: Verdana, sans-serif;
   background: #472b2b;
-  position: relative;
-  top: 12vw;
-  width: 38vw;
-  margin: 40px;
+  padding: 20px;
 }
 
-.box .img-box {
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  z-index: 2;
-}
-
-.box .img-box img {
-  position: relative;
-  z-index: 3;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.box:before {
+.card:before {
   content: "";
   position: absolute;
   top: -2px;
@@ -154,7 +137,7 @@ svg {
   z-index: -1;
 }
 
-.box:after {
+.card:after {
   content: "";
   position: absolute;
   top: -2px;
@@ -167,22 +150,12 @@ svg {
           filter: blur(10px);
 }
 
-.box:before,
-.box:after {
+.card:before,
+.card:after {
   background: linear-gradient(235deg, #ffbeba, #ffffff, #ff979a);
 }
 
-.box .portfolio-content {
-  position: relative;
-  bottom: 15px;
-  background: #472b2b;
-  z-index: 1;
-  overflow: hidden;
-  left: 0px;
-  padding: 10px;
-}
-
-.box .portfolio-content h2 {
+.card .card-body h2 {
   font-size: 1.7em;
   color: #fff;
   font-weight: 500;
@@ -190,10 +163,18 @@ svg {
   letter-spacing: 1px;
 }
 
-.box .portfolio-content p {
+.card .card-body p {
   font-size: 1em;
   color: #fff;
   line-height: 20px;
+}
+
+.card-footer {
+  background-color: transparent;
+}
+
+.card a {
+  bottom: 10px;
 }
 
 .effect {
