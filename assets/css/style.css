@@ -24,33 +24,23 @@ body {
 }
 
 #container-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   z-index: 1;
 }
 
 #container-3 {
   background-color: #003657;
+  z-index: 0;
 }
 
 svg {
   position: absolute;
   left: 0;
   bottom: 0;
-  overflow: visible;
+  overflow: visible !important;
 }
 
-#second-svg {
-  top: 0;
+#svg-2 svg {
+  z-index: -2;
 }
 
 .margin {
@@ -117,6 +107,8 @@ svg {
 }
 
 .card-deck {
+  margin: auto;
+  padding-top: 3vw;
   width: 75%;
 }
 
@@ -246,7 +238,7 @@ g#layer01_x5F_Clouds_x5F_1 path {
   font-size: 5vw;
   text-shadow: 0px 3px 5px #472b2b;
   -webkit-text-stroke: 2px #ffffff;
-  top: -9vw;
+  top: -4vw;
   right: 18vw;
 }
 
@@ -286,6 +278,14 @@ g#layer01_x5F_Clouds_x5F_1 path {
 .about:before,
 .about:after {
   background: linear-gradient(235deg, #ffbeba, #ffffff, #ff979a);
+}
+
+#layer03_x5F_Clouds_x5F_3 {
+  -webkit-animation: cloud-anim 90s normal infinite linear;
+          animation: cloud-anim 90s normal infinite linear;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  transform-box: fill-box;
 }
 
 #contact {
