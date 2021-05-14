@@ -85,13 +85,27 @@ a:hover {
         position: absolute;
         color: #fff7e7;
         -webkit-text-stroke: 1px #a75879;
-        font-size: 2.5vw;
+        font-size: 3vw;
         margin-top: 15px;
-        bottom: 15.5vw;
-        left: 17.5vw;
+        bottom: 19.5vw;
+        left: 38.5vw;
         width: 15vw;
         transform: rotate(-3deg);
     }
+}
+
+//Sign
+#sign {
+    transform: scale(1.5) translate(6%, -27%);
+}
+
+//Sign's Legs
+.candy_st84 {
+    transform: scaleX(1) scaleY(2) translate(25%, -41%);
+}
+
+.candy_st85 {
+    transform: scaleX(1) scaleY(2) translate(18%, -41%);
 }
 
 .clouds {
@@ -176,7 +190,7 @@ a:hover {
 
 .card {
     font-family: Verdana, sans-serif;
-    background: #472b2b;
+    background: #794832;
     padding: 20px;
 }
 
@@ -229,6 +243,7 @@ a:hover {
 
 .card-footer {
     background-color: transparent;
+    border-top: none;
 }
 
 .effect {
