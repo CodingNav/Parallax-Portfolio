@@ -132,13 +132,24 @@ a:hover {
   width: 100%;
 }
 
+.main-carousel {
+  margin: auto;
+  width: 75%;
+}
+
+.mb-2,
+.my-2 {
+  margin-top: 20px;
+}
+
 .flickity-button {
-  background: #ffbeba;
+  background: #ff979a;
   color: #fff;
 }
 
 .flickity-button:hover {
-  background: #ff9097;
+  background: #ffbbb8;
+  color: #003657;
 }
 
 .flickity-prev-next-button.previous {
@@ -147,11 +158,6 @@ a:hover {
 
 .flickity-prev-next-button.next {
   right: -10%;
-}
-
-.main-carousel {
-  margin: auto;
-  width: 75%;
 }
 
 .card-deck {
