@@ -134,6 +134,11 @@ a:hover {
     width: 75%;
 }
 
+.flickity-viewport {
+    overflow: unset;
+    overflow-x: clip;
+}
+
 .mb-2,
 .my-2 {
     margin-top: 20px;
@@ -159,8 +164,9 @@ a:hover {
 
 .card-deck {
     margin: auto;
-    padding-top: 3vw;
     width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
 
     img {
         height: 200px;
