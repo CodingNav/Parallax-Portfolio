@@ -138,6 +138,12 @@ a:hover {
   width: 75%;
 }
 
+.card-deck img {
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .card {
   font-family: Verdana, sans-serif;
   background: #472b2b;
@@ -189,10 +195,6 @@ a:hover {
 
 .card-footer {
   background-color: transparent;
-}
-
-.card a {
-  bottom: 10px;
 }
 
 .effect {

@@ -19,3 +19,8 @@ $("#svg-2").load("night-background.html", function () {
     horizontal: false
   });
 });
+
+$('.main-carousel').flickity({
+  cellAlign: 'left',
+  contain: true
+});

@@ -133,6 +133,11 @@ a:hover {
     margin: auto;
     padding-top: 3vw;
     width: 75%;
+
+    img {
+        height: 200px;
+        object-fit: contain;
+    }
 }
 
 .card {
@@ -190,10 +195,6 @@ a:hover {
 
 .card-footer {
     background-color: transparent;
-}
-
-.card a {
-    bottom: 10px;
 }
 
 .effect {
