@@ -18,9 +18,9 @@ body {
     height: 100vh;
 }
 
-#container-1 {
-    background-color: #ffaaa3;
-}
+// #container-1 {
+//     background-color: #ffaaa3;
+// }
 
 #container-2 {
     z-index: 1;
@@ -36,6 +36,7 @@ svg {
     left: 0;
     bottom: 0;
     overflow: visible !important;
+    z-index: -6;
 }
 
 #svg-2 svg {
@@ -60,6 +61,14 @@ a:hover {
 }
 
 //FIRST DIV
+.pink-background {
+    position: absolute;
+    background-color: #ffaaa3;
+    height: 100vh;
+    width: 100%;
+    z-index: -10;
+}
+
 #content {
     position: relative;
     height: 100vh;
@@ -130,7 +139,7 @@ a:hover {
     width: 100%;
     background-color: #8f5c46;
     background-image: linear-gradient(#8f5c46, #003657 85%);
-    z-index: 0;
+    z-index: -5;
 }
 
 #container-2 h1 {
