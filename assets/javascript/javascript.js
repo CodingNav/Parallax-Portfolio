@@ -26,3 +26,14 @@ $('.main-carousel').flickity({
   contain: true,
   pageDots: false
 });
+
+$('#carouselExampleControls1').on('slide.bs.carousel', function (event) {
+  var height = $(".carousel-text").height();
+  if (height == 0) {
+    $(".carousel-text").removeClass("carousel-item");
+  }
+  else {
+    $(".carousel-text").addClass("carousel-item");
+  }
+  console.log(event);
+})
