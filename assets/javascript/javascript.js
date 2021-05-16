@@ -35,5 +35,5 @@ $('#carouselExampleControls1').on('slide.bs.carousel', function (event) {
   else {
     $(".carousel-text").addClass("carousel-item");
   }
-  console.log(event);
 })
+
