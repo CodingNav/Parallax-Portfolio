@@ -404,6 +404,19 @@ form {
 
 #send-button {
   background-color: #6eb6d0;
+  border: none;
+}
+
+#send-button:active {
+  outline: none;
+}
+
+#send-button:focus {
+  outline: none;
+}
+
+#send-button:focus-visible {
+  outline: none;
 }
 
 @-webkit-keyframes spin {
