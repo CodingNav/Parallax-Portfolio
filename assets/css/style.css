@@ -131,6 +131,10 @@ a:hover {
   transform-box: fill-box;
 }
 
+.mobile {
+  display: none;
+}
+
 .background {
   position: absolute;
   top: 100vh;
@@ -187,7 +191,6 @@ a:hover {
 .card-deck {
   margin: auto;
   width: 100%;
-  min-height: 100%;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -460,6 +463,33 @@ form {
   to {
     -webkit-transform: translateX(200vw) translateY(55px);
             transform: translateX(200vw) translateY(55px);
+  }
+}
+
+@media (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  #container-2 h1 {
+    font-size: 12vw;
+  }
+  .card {
+    height: 86vh;
+    padding: 1vh;
+  }
+  #container-3 h1 {
+    font-size: 12vw;
+    right: 20vw;
+    margin-top: 10vw;
+  }
+  .about {
+    height: 90vw;
+    width: 93vw;
+    right: 3.5vw;
+    margin-top: 15vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
