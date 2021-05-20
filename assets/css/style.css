@@ -466,6 +466,15 @@ form {
   }
 }
 
+@media (max-width: 1080px) {
+  #container-3 h1 {
+    top: 15vw;
+  }
+  .about {
+    top: 25vw;
+  }
+}
+
 @media (max-width: 700px) {
   .desktop {
     display: none;
@@ -490,6 +499,9 @@ form {
     width: 93vw;
     right: none;
     margin-top: 20vw;
+  }
+  #container-4 {
+    height: 80vh;
   }
   #container-4 h1 {
     font-size: 12vw;

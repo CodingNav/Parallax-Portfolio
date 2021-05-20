@@ -434,6 +434,17 @@ form {
     }
 }
 
+@media (max-width: 1080px) {
+    //SECOND DIV
+    #container-3 h1 {
+        top: 15vw;
+    }
+
+    .about {
+        top: 25vw;
+    }
+}
+
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 700px) {
     .desktop {
@@ -445,6 +456,7 @@ form {
     }
 
     //FIRST DIV
+
     //SECOND DIV
     #container-2 h1 {
         font-size: 12vw;
@@ -461,6 +473,7 @@ form {
         right: 20vw;
         margin-top: 15vw;
     }
+
     .about {
         height: 45vw;
         width: 93vw;
@@ -469,6 +482,10 @@ form {
     }
 
     //FOURTH DIV
+    #container-4 {
+        height: 80vh;
+    }
+
     #container-4 h1 {
         font-size: 12vw;
     }
