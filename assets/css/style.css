@@ -193,6 +193,7 @@ a:hover {
   width: 100%;
   padding-left: 5px;
   padding-right: 5px;
+  min-height: 100%;
 }
 
 .card-deck img {
@@ -466,7 +467,28 @@ form {
   }
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1040px) {
+  #content h1 {
+    padding-top: 20vh;
+  }
+  #content h3 {
+    font-size: 5vw;
+    bottom: 19.5vw;
+    left: 24.5vw;
+    width: 25vw;
+  }
+  #sign {
+    -webkit-transform: scale(2) translate(-6%, -41%);
+            transform: scale(2) translate(-6%, -41%);
+  }
+  .candy_st84 {
+    -webkit-transform: scaleX(1) scaleY(2) translate(20%, -41%);
+            transform: scaleX(1) scaleY(2) translate(20%, -41%);
+  }
+  .candy_st85 {
+    -webkit-transform: scaleX(1) scaleY(2) translate(6%, -41%);
+            transform: scaleX(1) scaleY(2) translate(6%, -41%);
+  }
   #container-3 h1 {
     top: 15vw;
   }
@@ -482,11 +504,25 @@ form {
   .mobile {
     display: block;
   }
+  #content h1 {
+    font-size: 20vw;
+  }
+  #content h2 {
+    font-size: 12vw;
+  }
+  #content h3 {
+    font-size: 5.5vw;
+    bottom: 18.5vw;
+  }
+  #sign {
+    -webkit-transform: scale(2.5) translate(-10%, -48%);
+            transform: scale(2.5) translate(-10%, -48%);
+  }
   #container-2 h1 {
     font-size: 12vw;
   }
   .card {
-    height: 86vh;
+    height: 100vh;
     padding: 1vh;
   }
   #container-3 h1 {
@@ -505,6 +541,15 @@ form {
   }
   #container-4 h1 {
     font-size: 12vw;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-deck img {
+    height: 16vh;
+  }
+  .effect {
+    width: 85px;
   }
 }
 /*# sourceMappingURL=style.css.map */
