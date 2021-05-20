@@ -483,13 +483,16 @@ form {
   #container-3 h1 {
     font-size: 12vw;
     right: 20vw;
-    margin-top: 10vw;
+    margin-top: 15vw;
   }
   .about {
-    height: 90vw;
+    height: 45vw;
     width: 93vw;
-    right: 3.5vw;
-    margin-top: 15vw;
+    right: none;
+    margin-top: 20vw;
+  }
+  #container-4 h1 {
+    font-size: 12vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
