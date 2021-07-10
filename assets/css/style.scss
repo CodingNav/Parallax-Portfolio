@@ -61,6 +61,13 @@ a:hover {
 }
 
 //FIRST DIV
+.socials {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
 .pink-background {
     position: absolute;
     background-color: #ffaaa3;
@@ -327,8 +334,8 @@ g#layer01_x5F_Clouds_x5F_1 path {
 .about {
     position: absolute;
     background-color: #c0efff;
-    height: 20vw;
     width: 50vw;
+    padding: 30px;
     top: 5vh;
     right: 3vw;
 }
@@ -366,6 +373,14 @@ g#layer01_x5F_Clouds_x5F_1 path {
     -webkit-transform-origin: center center;
     transform-origin: center center;
     transform-box: fill-box;
+}
+
+.about p {
+    margin: 0;
+    text-align: left;
+    font-size: 15px;
+    font-family: Verdana, sans-serif;
+    color: #00365a;
 }
 
 //FOURTH DIV
