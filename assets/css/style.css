@@ -61,6 +61,7 @@ a:hover {
   position: absolute;
   width: 100%;
   padding: 15px;
+  z-index: 5;
   font-size: 25px;
   text-align: right;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -70,6 +71,10 @@ a:hover {
 .socials a {
   padding-right: 10px;
   color: #ffffff;
+}
+
+.socials a:hover {
+  color: #ffd1da !important;
 }
 
 .socials p {
