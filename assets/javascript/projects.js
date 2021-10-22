@@ -11,7 +11,7 @@ var projects = [
         images: ["./assets/images/gurdwara_mockup.png", "./assets/images/gurdwara_about.png"],
         title: "Gurdwara Guru Tegh Bahadur Sahib",
         description: `This is a website for the New York Sikh Temple.`,
-        technologies: "HTML, CSS, Javascript",
+        technologies: "HTML, CSS, Foundation, Javascript, JQuery",
         url: "https://www.gurdwarateghbahadur.com/",
         repo: "https://github.com/CodingNav/Hillside-Gurdwara"
     },
