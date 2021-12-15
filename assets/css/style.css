@@ -455,6 +455,49 @@ form {
   outline: none;
 }
 
+footer {
+  padding-top: 80px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  color: #ffbeba;
+  background-color: #003657;
+}
+
+footer a {
+  color: white;
+}
+
+#footer-logo {
+  font-family: "Farro", sans-serif;
+  font-size: 40px;
+  text-shadow: 0px 3px 5px #472b2b;
+  -webkit-text-stroke: 1px #ffffff;
+  color: #ffbeba;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer .fas {
+  font-size: 30px;
+}
+
+footer .fab {
+  font-size: 30px;
+}
+
+#copyright {
+  margin-top: 25px;
+}
+
+#copyright a {
+  font-size: 12px;
+  color: #628ead;
+}
+
 @-webkit-keyframes spin {
   from {
     -webkit-transform: rotate(-130deg);
