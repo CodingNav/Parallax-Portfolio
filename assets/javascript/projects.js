@@ -33,7 +33,7 @@ var projects = [
         title: "Book Search",
         description: `Book Search is emblematic of the fact that most modern websites are driven by two things: data and user demands. This shouldn't come as 
         a surprise, as the ability to personalize user data is the cornerstone of real-world web development today. And as user demands evolve, applications need 
-        to be more performant. The app was built using the MERN stack with a React front end, MongoDB database, and Node.js/Express.js server and API.`,
+        to be more performant.`,
         technologies: "HTML, CSS, Bootstrap, Javascript, React, Node.js, Express.js, MongoDB",
         url: "https://codingnav-book-search.herokuapp.com/",
         repo: "https://github.com/CodingNav/Book-Search"
@@ -50,7 +50,7 @@ var projects = [
     },
     {
         images: ["./assets/images/gurdwara_mockup.png", "./assets/images/gurdwara_about.png"],
-        title: "Gurdwara Guru Tegh Bahadur Sahib",
+        title: "Sikh Gurdwara",
         description: `This is a website for a Sikh Temple located in Long Island, New York.`,
         technologies: "HTML, CSS, Foundation, Javascript, JQuery",
         url: "https://www.gurdwarateghbahadur.com/",
@@ -69,8 +69,7 @@ var projects = [
         images: ["./assets/images/budget_tracker_mockup.png"],
         title: "Budget Tracker",
         description: `Budget Tracker is a Progressive Web Application that allows the user to be able to add expenses and deposits to their budget with or without a connection. 
-        When entering transactions offline, they should populate the total when brought back online. Giving users a fast and easy way to track their money is important, but 
-        allowing them to access that information anytime is even more important. Having offline functionality is paramount to the applications success.`,
+        Gives users a fast and easy way to track their money is important, but allows them to access that information anytime.`,
         technologies: "HTML, CSS, Javascript, Chart.js, Node.js, Express.js, MongoDB",
         url: "https://codingnav-budget-tracker.herokuapp.com/",
         repo: "https://github.com/CodingNav/Budget-Tracker"
@@ -115,7 +114,7 @@ var projects = [
     },
     {
         images: ["./assets/images/employee_mgt_mockup.png"],
-        title: "Employee Management System",
+        title: "Employee Management",
         description: `Employee Management System is a command-line application from scratch to manage a company's employee 
         database, using Node.js, Inquirer, and MySQL.`,
         technologies: "Javascript, Nodejs, MySQL",

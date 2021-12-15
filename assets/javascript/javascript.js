@@ -34,8 +34,9 @@ for(i = 0; i < projects.length; i++) {
       <!-- BODY -->
       <div class="card-body">
         <h2 class="card-title">${projects[i].title}</h2>
-        <p class="card-text">${projects[i].description}</p>
-        <p class="card-text">${projects[i].technologies}</p>
+        <p class="description card-text">${projects[i].description}</p>
+        <hr>
+        <p class="techs card-text">${projects[i].technologies}</p>
       </div>
       <footer class="card-footer">
         <a class="effect effect-5" href="${projects[i].url}" target="_blank"

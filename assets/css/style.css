@@ -64,7 +64,7 @@ a:hover {
   z-index: 5;
   font-size: 25px;
   text-align: right;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   background-color: #ff87a0;
 }
 
@@ -275,6 +275,16 @@ a:hover {
   line-height: 20px;
 }
 
+.card .description {
+  height: 200px;
+  overflow-y: auto;
+}
+
+.card .techs {
+  height: 120px;
+  overflow-y: auto;
+}
+
 .card-footer {
   background-color: transparent;
   border-top: none;
@@ -469,6 +479,10 @@ footer a {
   color: white;
 }
 
+footer a:hover {
+  color: #7fd7ff !important;
+}
+
 #footer-logo {
   font-family: "Farro", sans-serif;
   font-size: 40px;
@@ -477,8 +491,17 @@ footer a {
   color: #ffbeba;
 }
 
+#footer-logo:hover {
+  color: #ffbeba !important;
+}
+
 footer ul {
   list-style-type: none;
+}
+
+footer h5 {
+  padding-bottom: 20px;
+  text-shadow: 0px 3px 5px #472b2b;
 }
 
 footer .fas {
@@ -496,6 +519,10 @@ footer .fab {
 #copyright a {
   font-size: 12px;
   color: #628ead;
+}
+
+#copyright a:hover {
+  color: #7296af !important;
 }
 
 @-webkit-keyframes spin {
@@ -543,6 +570,12 @@ footer .fab {
 }
 
 @media (max-width: 1040px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
   #content h1 {
     padding-top: 20vh;
   }
@@ -573,12 +606,6 @@ footer .fab {
 }
 
 @media (max-width: 700px) {
-  .desktop {
-    display: none;
-  }
-  .mobile {
-    display: block;
-  }
   #content h1 {
     font-size: 20vw;
   }
@@ -597,21 +624,33 @@ footer .fab {
     font-size: 12vw;
   }
   .card {
-    height: 100vh;
     padding: 1vh;
+  }
+  .card a {
+    width: 100%;
+  }
+  .card .card-body h2 {
+    height: 100px;
+  }
+  #container-3 {
+    height: 180vh;
   }
   #container-3 h1 {
     font-size: 12vw;
     right: 20vw;
-    margin-top: 15vw;
+    margin-top: 90vw;
   }
   .about {
-    width: 93vw;
-    right: none;
-    margin-top: 20vw;
+    width: 80vw;
+    padding: 20px;
+    right: 9vw;
+    margin-top: 100vw;
+  }
+  #svg-2 svg {
+    width: 180%;
   }
   #container-4 {
-    height: 80vh;
+    height: 70vh;
   }
   #container-4 h1 {
     font-size: 12vw;
@@ -620,7 +659,7 @@ footer .fab {
 
 @media (max-width: 360px) {
   .card-deck img {
-    height: 16vh;
+    height: 20vh;
   }
   .effect {
     width: 85px;
