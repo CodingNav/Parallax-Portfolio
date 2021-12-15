@@ -657,12 +657,16 @@ footer .fab {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 576px) {
   .card-deck img {
     height: 20vh;
   }
   .effect {
     width: 85px;
+  }
+  footer ul {
+    padding: 0;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

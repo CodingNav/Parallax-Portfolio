@@ -647,7 +647,7 @@ footer .fab {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 576px) {
     //SECOND DIV
     .card-deck img {
         height: 20vh;
@@ -655,5 +655,11 @@ footer .fab {
 
     .effect {
         width: 85px;
+    }
+
+    //FOOTER
+    footer ul {
+        padding: 0;
+        text-align: center;
     }
 }
