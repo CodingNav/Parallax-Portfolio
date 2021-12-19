@@ -3,6 +3,10 @@
   src: url("../fonts/Bubblegum.ttf");
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   height: 100vh;
   margin: 0px;
@@ -21,11 +25,6 @@ body {
 
 #container-2 {
   z-index: 1;
-}
-
-#container-3 {
-  background-color: #003657;
-  z-index: 0;
 }
 
 svg {
@@ -161,7 +160,7 @@ a:hover {
 
 .background {
   position: absolute;
-  top: 100vh;
+  top: 0;
   height: 100vh;
   width: 100%;
   background-color: #8f5c46;
@@ -276,12 +275,7 @@ a:hover {
 }
 
 .card .description {
-  height: 200px;
-  overflow-y: auto;
-}
-
-.card .techs {
-  height: 120px;
+  height: 100px;
   overflow-y: auto;
 }
 
@@ -352,6 +346,11 @@ g#layer01_x5F_Clouds_x5F_1 path {
   fill: #c9eeff !important;
 }
 
+#container-3 {
+  z-index: 0;
+  background-color: #003657;
+}
+
 #container-3 h1 {
   position: absolute;
   font-family: "Farro", sans-serif;
@@ -359,7 +358,7 @@ g#layer01_x5F_Clouds_x5F_1 path {
   font-size: 5vw;
   text-shadow: 0px 3px 5px #472b2b;
   -webkit-text-stroke: 2px #ffffff;
-  top: -4vw;
+  top: 3vw;
   right: 18vw;
 }
 
@@ -368,7 +367,7 @@ g#layer01_x5F_Clouds_x5F_1 path {
   background-color: #c0efff;
   width: 50vw;
   padding: 30px;
-  top: 5vh;
+  top: 16vh;
   right: 3vw;
 }
 
@@ -418,7 +417,7 @@ g#layer01_x5F_Clouds_x5F_1 path {
 }
 
 #container-4 {
-  height: 100vh;
+  height: 70vh;
   background-color: #c9eeff;
 }
 
@@ -570,12 +569,6 @@ footer .fab {
 }
 
 @media (max-width: 1040px) {
-  .desktop {
-    display: none;
-  }
-  .mobile {
-    display: block;
-  }
   #content h1 {
     padding-top: 20vh;
   }
@@ -596,6 +589,15 @@ footer .fab {
   .candy_st85 {
     -webkit-transform: scaleX(1) scaleY(2) translate(6%, -41%);
             transform: scaleX(1) scaleY(2) translate(6%, -41%);
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .card-deck img {
+    height: 45vh;
   }
   #container-3 h1 {
     top: 15vw;
@@ -626,6 +628,17 @@ footer .fab {
   .card {
     padding: 1vh;
   }
+  .card-deck img {
+    height: 20vh;
+  }
+  .card .description {
+    height: 200px;
+    overflow-y: auto;
+  }
+  .card .techs {
+    height: 120px;
+    overflow-y: auto;
+  }
   .card a {
     width: 100%;
   }
@@ -634,6 +647,8 @@ footer .fab {
   }
   #container-3 {
     height: 180vh;
+    z-index: 0;
+    background-color: #003657;
   }
   #container-3 h1 {
     font-size: 12vw;
@@ -648,18 +663,13 @@ footer .fab {
   }
   #svg-2 svg {
     width: 180%;
+    overflow-x: hidden !important;
   }
   #container-4 {
     height: 70vh;
   }
   #container-4 h1 {
     font-size: 12vw;
-  }
-}
-
-@media (max-width: 576px) {
-  .card-deck img {
-    height: 20vh;
   }
   footer ul {
     padding: 0;
