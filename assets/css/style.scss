@@ -3,6 +3,10 @@
     src: url("../fonts/Bubblegum.ttf");
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     height: 100vh;
     margin: 0px;
@@ -334,7 +338,7 @@ g#layer01_x5F_Clouds_x5F_1 path {
 }
 
 #container-3 {
-    z-index: 0;  
+    z-index: 0;
     background-color: #003657;
 }
 
@@ -618,7 +622,7 @@ footer .fab {
         height: 200px;
         overflow-y: auto;
     }
-    
+
     .card .techs {
         height: 120px;
         overflow-y: auto;
@@ -635,7 +639,7 @@ footer .fab {
     //THIRD DIV
     #container-3 {
         height: 180vh;
-        z-index: 0;  
+        z-index: 0;
         background-color: #003657;
     }
 
@@ -666,9 +670,9 @@ footer .fab {
         font-size: 12vw;
     }
 
-        //FOOTER
-        footer ul {
-            padding: 0;
-            text-align: center;
-        }
+    //FOOTER
+    footer ul {
+        padding: 0;
+        text-align: center;
+    }
 }
