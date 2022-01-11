@@ -61,10 +61,12 @@ a:hover {
   width: 100%;
   padding: 15px;
   z-index: 5;
-  font-size: 25px;
-  text-align: right;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #ff87a0;
+  text-align: left;
+  font-size: 22px;
+  font-family: sans-serif;
+  word-spacing: 14px;
+  letter-spacing: 2px;
+  text-shadow: 1px 2px #ff87a0;
 }
 
 .socials a {
@@ -621,6 +623,9 @@ footer .fab {
   #sign {
     -webkit-transform: scale(2.5) translate(-10%, -48%);
             transform: scale(2.5) translate(-10%, -48%);
+  }
+  .socials {
+    text-align: center;
   }
   #container-2 h1 {
     font-size: 12vw;
