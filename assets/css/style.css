@@ -105,6 +105,12 @@ a:hover {
 
 #linkedin-tree {
   font-size: 4vw;
+  left: 20.5vw;
+  bottom: 25vw;
+}
+
+#mail-tree {
+  font-size: 4vw;
   right: 20.5vw;
   bottom: 25vw;
 }
