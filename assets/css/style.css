@@ -89,7 +89,7 @@ a:hover {
 }
 
 .tree-icon:hover {
-  color: #f799c4 !important;
+  color: #19ffeb !important;
 }
 
 .tree-icon *:hover {
@@ -612,23 +612,23 @@ footer .fab {
 
 @-webkit-keyframes social-anim {
   from {
-    -webkit-transform: rotate(-30deg);
-            transform: rotate(-30deg);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   to {
-    -webkit-transform: rotate(30deg);
-            transform: rotate(30deg);
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
 }
 
 @keyframes social-anim {
   from {
-    -webkit-transform: rotate(-30deg);
-            transform: rotate(-30deg);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   to {
-    -webkit-transform: rotate(30deg);
-            transform: rotate(30deg);
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
 }
 
