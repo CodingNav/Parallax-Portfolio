@@ -56,7 +56,7 @@ a:hover {
   text-decoration: none !important;
 }
 
-.socials {
+.nav {
   position: absolute;
   width: 100%;
   padding: 15px;
@@ -64,28 +64,34 @@ a:hover {
   text-align: left;
   font-size: 22px;
   font-family: sans-serif;
-  word-spacing: 14px;
   letter-spacing: 2px;
   text-shadow: 1px 2px #ff87a0;
 }
 
-.socials a {
-  padding-right: 10px;
+.nav a {
+  padding-left: 25px;
   color: #ffffff;
 }
 
-.socials a:hover {
+.nav a:hover {
   color: #ffd1da !important;
 }
 
-.socials p {
+.nav p {
   display: inline;
 }
 
 .tree-icon {
   position: absolute;
+  z-index: 5;
   color: #f9d1e3;
   text-shadow: 0px 3px 3px #693a5d;
+}
+
+.tree-icon:hover {
+  color: #f799c4 !important;
+  -webkit-animation: social-anim 1.5s alternate infinite linear;
+          animation: social-anim 1.5s alternate infinite linear;
 }
 
 #github-tree {
@@ -649,7 +655,7 @@ footer .fab {
     -webkit-transform: scale(2.5) translate(-10%, -48%);
             transform: scale(2.5) translate(-10%, -48%);
   }
-  .socials {
+  .nav {
     text-align: center;
   }
   #container-2 h1 {
