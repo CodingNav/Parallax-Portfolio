@@ -87,9 +87,11 @@ a:hover {
     color: #f9d1e3;
     text-shadow: 0px 3px 3px #693a5d;
 }
-
 .tree-icon:hover {
     color: #f799c4 !important;
+}
+
+.tree-icon *:hover {
     animation: social-anim 1.5s alternate infinite linear;
 }
 
@@ -566,14 +568,14 @@ footer .fab {
     }
 }
  
-// @keyframes social-anim {
-//     from {
-//         transform: rotate(-30deg);
-//     }
-//     to {
-//         transform: rotate(30deg);
-//     }
-// }
+@keyframes social-anim {
+    from {
+        transform: rotate(-30deg);
+    }
+    to {
+        transform: rotate(30deg);
+    }
+}
 
 @media (max-width: 1040px) {
     //FIRST DIV
