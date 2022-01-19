@@ -122,6 +122,20 @@ a:hover {
   bottom: 32vw;
 }
 
+.fact_2 {
+  position: relative;
+  z-index: 100;
+}
+
+.fact_2 {
+  cursor: pointer;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  transform-box: fill-box;
+  -webkit-animation: rotate-anim 1.5s forwards infinite linear;
+          animation: rotate-anim 1.5s forwards infinite linear;
+}
+
 .pink-background {
   position: absolute;
   background-color: #ffaaa3;
@@ -136,6 +150,7 @@ a:hover {
   z-index: 1;
   font-family: "Farro", sans-serif;
   letter-spacing: 2px;
+  pointer-events: none;
 }
 
 #content h1 {
@@ -194,6 +209,10 @@ a:hover {
   -webkit-animation: spin 3s alternate infinite linear;
           animation: spin 3s alternate infinite linear;
   transform-box: fill-box;
+}
+
+.mobile-icon {
+  display: none;
 }
 
 .mobile {
@@ -375,7 +394,7 @@ a:hover {
 }
 
 .effect.effect-5:hover {
-  text-indent: 30px;
+  text-indent: 15px;
 }
 
 .effect.effect-5:hover:before {
@@ -632,7 +651,39 @@ footer .fab {
   }
 }
 
+@-webkit-keyframes rotate-anim {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-anim {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 @media (max-width: 1040px) {
+  .mobile-icon {
+    display: inline;
+    padding-left: 10px;
+    font-size: 8vw;
+    color: white;
+    text-shadow: 0px 1px 3px #472b2b;
+  }
+  .tree-icon {
+    display: none;
+  }
   #content h1 {
     padding-top: 20vh;
   }

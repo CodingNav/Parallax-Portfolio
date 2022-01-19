@@ -120,6 +120,17 @@ a:hover {
     bottom: 32vw;
 }
 
+.fact_2 {
+    position: relative;
+    z-index: 100;
+}
+.fact_2 {
+    cursor: pointer;
+    transform-origin: center center;
+    transform-box: fill-box;
+    animation: rotate-anim 1.5s forwards infinite linear;
+}
+
 .pink-background {
     position: absolute;
     background-color: #ffaaa3;
@@ -134,6 +145,7 @@ a:hover {
     z-index: 1;
     font-family: "Farro", sans-serif;
     letter-spacing: 2px;
+    pointer-events: none;
 
     h1 {
         padding-top: 10vh;
@@ -188,6 +200,10 @@ a:hover {
     transform-origin: center center;
     animation: spin 3s alternate infinite linear;
     transform-box: fill-box;
+}
+
+.mobile-icon {
+    display: none;
 }
 
 //SECOND DIV
@@ -363,7 +379,7 @@ a:hover {
     }
 
     &:hover {
-        text-indent: 30px;
+        text-indent: 15px;
 
         &:before {
             transform: scale(1, 1);
@@ -583,8 +599,31 @@ footer .fab {
     }
 }
 
+@keyframes rotate-anim {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
 @media (max-width: 1040px) {
     //FIRST DIV
+    .mobile-icon {
+        display: inline;
+        padding-left: 10px;
+        font-size: 8vw;
+        color: white;
+        text-shadow: 0px 1px 3px #472b2b;
+    }
+
+    .tree-icon {
+        display: none;
+    }
+
     #content h1 {
         padding-top: 20vh;
     }
