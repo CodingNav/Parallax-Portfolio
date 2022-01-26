@@ -23,7 +23,7 @@ body {
   height: 100vh;
 }
 
-#container-2 {
+#portfolio {
   z-index: 1;
 }
 
@@ -230,7 +230,7 @@ a:hover {
   z-index: -5;
 }
 
-#container-2 h1 {
+#portfolio h1 {
   font-family: "Farro", sans-serif;
   color: #ffbeba;
   font-size: 5vw;
@@ -407,12 +407,12 @@ g#layer01_x5F_Clouds_x5F_1 path {
   fill: #c9eeff !important;
 }
 
-#container-3 {
+#about {
   z-index: 0;
   background-color: #003657;
 }
 
-#container-3 h1 {
+#about h1 {
   position: absolute;
   font-family: "Farro", sans-serif;
   color: #ffbeba;
@@ -477,12 +477,12 @@ g#layer01_x5F_Clouds_x5F_1 path {
   color: #00365a;
 }
 
-#container-4 {
+#contact {
   height: 70vh;
   background-color: #c9eeff;
 }
 
-#container-4 h1 {
+#contact h1 {
   font-family: "Farro", sans-serif;
   color: #6eb6d0;
   font-size: 5vw;
@@ -714,7 +714,7 @@ footer .fab {
   .card-deck img {
     height: 45vh;
   }
-  #container-3 h1 {
+  #about h1 {
     top: 15vw;
   }
   .about {
@@ -740,7 +740,7 @@ footer .fab {
   .nav {
     text-align: center;
   }
-  #container-2 h1 {
+  #portfolio h1 {
     font-size: 12vw;
   }
   .card {
@@ -763,12 +763,12 @@ footer .fab {
   .card .card-body h2 {
     height: 100px;
   }
-  #container-3 {
+  #about {
     height: 180vh;
     z-index: 0;
     background-color: #003657;
   }
-  #container-3 h1 {
+  #about h1 {
     font-size: 12vw;
     right: 20vw;
     margin-top: 90vw;
@@ -779,10 +779,10 @@ footer .fab {
     right: 9vw;
     margin-top: 100vw;
   }
-  #container-4 {
+  #contact {
     height: 70vh;
   }
-  #container-4 h1 {
+  #contact h1 {
     font-size: 12vw;
   }
   footer ul {
