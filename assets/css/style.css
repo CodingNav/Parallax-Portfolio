@@ -767,9 +767,6 @@ footer .fab {
     height: 120px;
     overflow-y: auto;
   }
-  .card a {
-    width: 100%;
-  }
   .card .card-body h2 {
     height: 100px;
   }
