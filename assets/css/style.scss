@@ -3,6 +3,10 @@
     src: url("../fonts/Bubblegum.ttf");
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -622,6 +626,10 @@ footer .fab {
 
     .tree-icon {
         display: none;
+    }
+
+    #content {
+        pointer-events: initial;
     }
 
     #content h1 {
