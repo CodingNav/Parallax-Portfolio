@@ -14,9 +14,9 @@ var projects = [
         description: `Easy Eats is a recipes website for a busy individual who enjoys cooking. It is sometimes difficult to find a website 
         that has both the recipes and ingredients needed, which can be exhausting. Easy Eats allows for a more enjoyable experience in learning 
         new recipes by allowing users to find recipes and order the ingredients in one spot.`,
-        technologies: "HTML, CSS, Javascript, JQuery",
-        url: "https://codingnav.github.io/Easy-Eats/",
-        repo: "https://github.com/CodingNav/Easy-Eats"
+        technologies: "HTML, SCSS, Materialize, TypeScript, Angular",
+        url: "https://easy-eats-angular.netlify.app/",
+        repo: "https://github.com/CodingNav/Easy-Eats-Angular"
     },
     {
         images: ["./assets/images/techblog_mockup.png"],
