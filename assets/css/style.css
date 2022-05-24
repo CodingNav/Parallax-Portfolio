@@ -734,10 +734,10 @@ footer .fab {
 @media (max-width: 700px) {
   #content h1 {
     padding-top: 20vh;
-    font-size: 15vw;
+    font-size: 13vw;
   }
   #content h2 {
-    font-size: 12vw;
+    font-size: 11vw;
   }
   .mobile-icon {
     font-size: 7vw;
