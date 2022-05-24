@@ -684,6 +684,9 @@ footer .fab {
     color: white;
     text-shadow: 0px 1px 3px #472b2b;
   }
+  .mobile-icon:hover {
+    color: #19ffeb !important;
+  }
   .tree-icon {
     display: none;
   }
