@@ -676,6 +676,13 @@ footer .fab {
   }
 }
 
+@media (min-width: 1310px) and (max-height: 800px) {
+  #content h1 {
+    padding-top: 0;
+    font-size: 4em;
+  }
+}
+
 @media (max-width: 1040px) {
   .mobile-icon {
     display: inline;
